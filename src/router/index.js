@@ -23,14 +23,19 @@ const router = createRouter({
     {
       path: '/my',
       name: '/My view',
-      component: () => import('../views/MyView.vue'),
+      component: () => import('@/views/MyView.vue'),
     },
     {
       path: '/:catchAll(.*)*',
-      component: () => import('../views/NoShow.vue'),
+      component: () => import('@/views/NoShow.vue'),
       meta: {
         title: '404 not found',
       },
+    },
+    {
+      path: '/users',
+      name: 'Users',
+      component: () => import('@/views/UsersView.vue'),
     },
   ],
 })

@@ -1,5 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref, provide } from 'vue'
+
+const HomeViews = ref(0)
+provide('HomeViews', HomeViews)
 </script>
 
 <template>
@@ -7,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/my">My view</RouterLink>
     </nav>
   </header>
 

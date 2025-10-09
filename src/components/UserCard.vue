@@ -18,6 +18,7 @@ const props = defineProps(['user'])
   max-width: 250px;
   border: 1px solid navy;
   box-shadow: 5px 5px 5px #a79dff;
+  margin: 0.5em;
 }
 
 p {

@@ -37,6 +37,12 @@ const router = createRouter({
       name: 'Users',
       component: () => import('@/views/UsersView.vue'),
     },
+    {
+      path: '/user/:id',
+      name: 'User view',
+      component: () => import('@/views/SingelUserView.vue'),
+      props: true,
+    },
   ],
 })
 router.beforeEach((to) => {

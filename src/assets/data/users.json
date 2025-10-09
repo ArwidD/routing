@@ -29,6 +29,11 @@
       "id": 63838,
       "namn": "Melker",
       "bild": "melker.jfif"
+    },
+    {
+      "id": 1,
+      "namn": "Kjell",
+      "bild": "kjell.png"
     }
   ]
 }
